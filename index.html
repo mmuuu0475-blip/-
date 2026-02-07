@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dz-Scholar | منصة حساب المعدلات الاحترافية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-gradient"></div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">Σ</span>
+                <h1>معدلي <span class="pro-badge">PRO</span></h1>
+            </div>
+            <p class="subtitle">نظام الحساب الدقيق للمناهج التعليمية</p>
+        </header>
+
+        <main id="main-content">
+            <section id="phase-selection" class="screen active">
+                <h2 class="section-title">اختر الطور التعليمي</h2>
+                <div class="grid-menu">
+                    <button class="menu-card" onclick="app.selectPhase('primary')">
+                        <div class="card-icon">📚</div>
+                        <span>الطور الابتدائي</span>
+                    </button>
+                    <button class="menu-card" onclick="app.selectPhase('middle')">
+                        <div class="card-icon">📖</div>
+                        <span>الطور المتوسط</span>
+                    </button>
+                    <button class="menu-card" onclick="app.selectPhase('secondary')">
+                        <div class="card-icon">🎓</div>
+                        <span>الطور الثانوي</span>
+                    </button>
+                    <button class="menu-card" onclick="app.selectPhase('exam_primary')">
+                        <div class="card-icon">🏅</div>
+                        <span>شهادة الابتدائي</span>
+                    </button>
+                    <button class="menu-card" onclick="app.selectPhase('exam_middle')">
+                        <div class="card-icon">🎖️</div>
+                        <span>شهادة التعليم المتوسط</span>
+                    </button>
+                    <button class="menu-card" onclick="app.selectPhase('exam_bac')">
+                        <div class="card-icon">📜</div>
+                        <span>شهادة البكالوريا</span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="level-selection" class="screen"></section>
+
+            <section id="calculator-screen" class="screen"></section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2026 جميع الحقوق محفوظة - دقة الحساب الأكاديمي</p>
+        </footer>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
